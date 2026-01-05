@@ -17,3 +17,5 @@ echo "Использование диска:" | tee -a "$LOG_FILE"
 df -h | tee -a "$LOG_FILE"
 
 echo "Лог сохранен в: $LOG_FILE" | tee -a "$LOG_FILE"
+# Добавим дату запуска
+echo "Скрипт запущен: $(date)" | tee -a "$LOG_FILE"
